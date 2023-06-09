@@ -1,0 +1,28 @@
+.im1{
+    float: left;
+  padding: 10px;
+}
+.primertexto{
+    text-align: justify;
+    font-size: 15px;
+      
+}
+.botonIr{
+    padding: 50px;
+     float: right;
+}
+.im2{
+    float: right;
+    padding: 20px;
+}
+.tercertext{
+    font-size: 35px;
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    float: inline-end;
+}

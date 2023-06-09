@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./funciones.js"></script>
+</head>
+<body>
+    <h1> Su carrito</h1>
+    <button type="button" onclick="volver()" href="./index.html" class="botonIr"> Volver a la pagina principal</button> <br><br><br><br>
+
+    <form action="">
+        Seleccione las prendas que desea agregar al carrito  <br><br>
+        <span> Remera blanca</span>
+        <input type="checkbox" name="remerablanca" id="remerablanca"> <br>
+        <span>Remera atardecer</span>
+        <input type="checkbox" name="remeraroja" id="remeraroja"><br>
+        <span>Campera polar</span>
+        <input type="checkbox" name="campera" id="campera"> <br>
+        <span>Buzo hoodie</span>
+        <input type="checkbox" name="buzo" id="buzo"> <br>
+        <button type="button" onclick="seleccion()"  > Enviar productos</button> <br><br><br><br>
+        
+        <button type="button" onclick="borrar()">BORRAR</button><br>
+        <div id="mensaje"></div> <br><hr><br>
+
+        Seleccione su metodo de pago:
+        <select name="metodo" id="metodo">
+            <option value="E">Efectivo</option>
+            <option value="TC"> Tarjeta de crédito</option>
+            <option value="TD"> Tarjeta de debito</option>
+            <option value="T">Transferencia</option>
+        </select>
+        <button type="button" onclick="precioFinal()">Aceptar </button>
+        <button type="button" onclick="borrar1()">Volver</button><br>
+        <div id="mensaje1"></div> <br><hr><br>
+
+            <h1> Datos de envío</h1>
+            <span>Localidad</span>
+            <input type="text" name="loc" id="loc"placeholder="por ej, Córdoba Capital" required>
+        <span> Direccion</span>
+        <input type="text" name="dir" id="dir" placeholder="Direccion" required>
+        <span> Dia de preferencia</span>
+        <input type="number" name="dia" id="dia" placeholder="Para recibir el pedido">
+        <button type="button" onclick="envio()">Aceptar </button>
+        <button type="button" onclick="borrar3()">Borrar</button><br>
+        <div id="mensaje3"></div> <br>
+    </form>
+    
+</body>
+</html>
